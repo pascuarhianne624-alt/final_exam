@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Personal Portfolio</title>
+
+    <style>
+        /* GENERAL STYLE */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFF0F5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #BE185D;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #FBCFE8;
+        }
+
+        /* HOME SECTION */
+        .home {
+            min-height: 400px;
+            background-color: #FBCFE8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 10%;
+        }
+
+        .home h1 {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .home span {
+            color: #BE185D;
+        }
+
+        .home h3 {
+            margin-bottom: 15px;
+        }
+
+        /* CONTENT SECTIONS */
+        .section {
+            padding: 50px 10%;
+            background-color: #FFF0F5;
+        }
+
+        .section h2 {
+            text-align: center;
+            color: #9D174D;
+            margin-bottom: 25px;
+            font-size: 28px;
+        }
+
+        .content {
+            background-color: #FFFFFF;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(190, 24, 93, 0.15);
+        }
+
+        .content h3 {
+            color: #DB2777;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            margin-bottom: 10px;
+        }
+
+        .content ul {
+            padding-left: 25px;
+        }
+
+        /* JAVA SOURCE CODE */
+        pre {
+            background-color: #831843;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin-top: 15px;
+            white-space: pre;
+            font-family: Consolas, monospace;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #BE185D;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media screen and (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+
+            .home h1 {
+                font-size: 28px;
+            }
+
+            .section {
+                padding: 35px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header>
+        <h2 class="logo">My Portfolio</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">Personal Info</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#java">Java Project</a>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="home">
+        <div>
+            <h1><span>Rhianne C. Pascua</span></h1>
+
+            <h3>First Year BS Information Technology Student</h3>
+
+            <p>
+                Welcome to my portfolio!
+                This website showcases my personal information,
+                educational background, skills, and Java project.
+            </p>
+        </div>
+    </section>
+
+    <!-- PERSONAL INFORMATION -->
+    <section id="about" class="section">
+        <h2>Personal Information</h2>
+
+        <div class="content">
+            <p><strong>Name:</strong> Rhianne C. Pascua</p>
+            <p><strong>Age:</strong> 18</p>
+            <p><strong>Address:</strong> Nagpandayan, Guimba, Nueva Ecija</p>
+            <p><strong>Email:</strong> rhiannepascua@gmail.com</p>
+            <p><strong>Course:</strong> BS Information Technology</p>
+
+            <h3>About Me</h3>
+
+            <p>
+                I am a first-year Information Technology student
+                who is willing to learn new things and improve my
+                knowledge about computers and technology. I always
+                try my best to become a better student and develop
+                my skills.
+            </p>
+        </div>
+    </section>
+
+    <!-- EDUCATIONAL BACKGROUND -->
+    <section id="education" class="section">
+        <h2>Educational Background</h2>
+
+        <div class="content">
+            <h3>College</h3>
+            <p>Our Lady of the Sacred Heart College of Guimba, Inc.</p>
+            <p>BS Information Technology</p>
+            <p>First Year College</p>
+
+            <h3>Senior High School</h3>
+            <p>Bonifacio Luz Natividad Educational Foundation Inc.</p>
+            <p>STEM</p>
+
+            <h3>Junior High School</h3>
+            <p>Nagpandayan National High School</p>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <h2>My Skills</h2>
+
+        <div class="content">
+            <ul>
+                <li>Basic Computer Skills</li>
+                <li>Basic Java Programming</li>
+                <li>Problem Solving</li>
+                <li>Communication Skills</li>
+                <li>Teamwork</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- JAVA PROJECT -->
+    <section id="java" class="section">
+        <h2>My Java Project</h2>
+
+        <div class="content">
+            <h3>Final Performance Task - CC102</h3>
+
+            <p>
+                This presents my final Java console-based game
+                developed for my Introduction to Computer
+                Programming subject.
+            </p>
+
+            <h3>Puzzle Game Source Code</h3>
+
+            <p>
+                Below is the source code of my Puzzle Game project.
+                It is displayed as code only and will not run inside
+                this portfolio.
+            </p>
+
+            <pre><code>
+let tiles = [1,2,3,4,5,6,7,8,0];
+
+const board = document.getElementById('board');
+const msg = document.getElementById('msg');
+
+function draw() {
+    board.innerHTML = '';
+
+    tiles.forEach((n, i) => {
+        let div = document.createElement('div');
+
+        div.className = n === 0 ? 'tile empty' : 'tile';
+        div.textContent = n === 0 ? '' : n;
+        div.onclick = () => move(i);
+
+        board.appendChild(div);
+    });
+
+    if (tiles.join(',') === '1,2,3,4,5,6,7,8,0') {
+        msg.textContent = 'Puzzle Solved!';
+    }
+}
+
+function move(i) {
+    let e = tiles.indexOf(0);
+
+    let can = [e - 3, e + 3];
+
+    if (e % 3 !== 0) can.push(e - 1);
+    if (e % 3 !== 2) can.push(e + 1);
+
+    if (can.includes(i)) {
+        [tiles[e], tiles[i]] = [tiles[i], tiles[e]];
+
+        msg.textContent = 'Fix it 1-8!';
+        draw();
+    }
+}
+
+function shuffle() {
+    for (let i = 0; i < 200; i++) {
+        let e = tiles.indexOf(0);
+
+        let moves = [e - 3, e + 3];
+
+        if (e % 3 !== 0) moves.push(e - 1);
+        if (e % 3 !== 2) moves.push(e + 1);
+
+        moves = moves.filter(m => m >= 0 && m < 9);
+
+        let r = moves[Math.floor(Math.random() * moves.length)];
+
+        [tiles[e], tiles[r]] = [tiles[r], tiles[e]];
+    }
+
+    msg.textContent = 'Fix it 1-8!';
+    draw();
+}
+
+draw();
+            </code></pre>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>My Portfolio</p>
+        <p>Created by: Rhianne C. Pascua</p>
+        <p>BS Information Technology</p>
+    </footer>
+
+</body>
+</html>
